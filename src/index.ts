@@ -68,7 +68,7 @@ function createArray<T = string>(value: T, length: number): T[] {
 }
 
 createArray<string>('abc', 5);
-createArray<false>(true, 5);
+// createArray<false>(true, 5);
 createArray(1, 5);
 const interArray = createArray<Inter>(inter, 5);
 
@@ -90,14 +90,14 @@ stringQueue.enqueue('aaaa');
 const numberQueue: Queue<number> = new Queue<number>();
 numberQueue.enqueue(6);
 
-function reverseArray<T extends Array<U>, U>(arr: T): U[] {
-  return arr.length;
-}
+// function reverseArray<T extends Array<U>, U>(arr: T): U[] {
+//   return arr.length;
+// }
 
-reverseArray([1,2,4,4]);
-const t= reverseArray(['ad', 'asds']);
-reverseArray('adsdsd');
-reverseArray(2);
+// reverseArray([1,2,4,4]);
+// const t= reverseArray(['ad', 'asds']);
+// reverseArray('adsdsd');
+// reverseArray(2);
 
 function addNumbers(a: number, b: number): number {
   return a + b;
@@ -143,3 +143,7 @@ operation(5,10, (result) => {
   console.log(result);
   return 'll';
 })
+
+const methodWIthAny = (someVar: any) => {
+
+}

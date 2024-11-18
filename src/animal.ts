@@ -1,4 +1,4 @@
-class Animal {
+class Animal2 {
   constructor(
     public readonly years: number,
     public readonly hasTail: boolean
@@ -13,7 +13,7 @@ class Animal {
   }
 }
 
-class Dog extends Animal {
+class Dog extends Animal2 {
   constructor(years: number, public readonly name: string) {
     super(years, true);
   }
@@ -30,7 +30,7 @@ class Dog extends Animal {
 
 }
 
-const someAnimal = new Animal(1, false);
+const someAnimal = new Animal2(1, false);
 const burek = new Dog(3, 'Burek');
 console.log(burek.hasTail);
 burek.howhow();

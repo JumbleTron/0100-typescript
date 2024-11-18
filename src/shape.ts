@@ -37,10 +37,10 @@ class NoExtend {
   }
 
 }
-
-class Child extends NoExtend {
-
-}
+//
+// class Child extends NoExtend {
+//
+// }
 
 const classInstance = NoExtend.getInstance();
 classInstance.sayHello();
