@@ -17,6 +17,7 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
+    "inversify": "^6.2.0",
     "ts-node": "^10.9.2",
     "tslint": "^5.20.1"
   }
